@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="advancedsearch.css">
+</head>
+
+<body style="height: 800px;">
+    <a class="gosearch" href="index.html"> Search</a>
+    <h2 class="header"> Advanced Search</h2>
+
+    <div class="border"></div>
+
+    <div class="form">
+        <label class="label">Find pages with...</label>
+
+        <form  action="https://google.com/search">
+
+            <div style="margin-top: 5%;margin-left: 5%;">
+                <label class="labels">all these words:</label>
+                <input class="option1" type="text" name="as_q">
+            </div>
+
+
+            <div style="margin-top: 2%;margin-left: 5%;">
+                <label class="labels">this exact word or phrase:</label>
+                <input class="option2" type="text" name="as_epq">
+            </div>
+
+
+            <div style="margin-top: 2%;margin-left: 5%;">
+                <label class="labels">any of these words:</label>
+                <input class="option3" type="text" name="as_oq">
+            </div>
+
+
+            <div style="margin-top: 2%;margin-left: 5%;">
+                <label class="labels">none of these words:</label>
+                <input class="option4" type="text" name="as_eq">
+            </div>
+
+            <button class="button" type="submit">Advanced Search</button>
+        </form>
+    </div>
+</body>
+
+</html>

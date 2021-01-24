@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Edit content</title>
+    <link href="static/encyclopedis/styles.css'" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="addNew">
+        <div>
+            <form method="POST" >
+                {% csrf_token %}
+                <div>
+                    <h1>Edit {{ title }} content: </h1>
+                    </br>
+                {{ form.as_p }}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+</body>
+
+</html>

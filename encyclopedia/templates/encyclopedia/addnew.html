@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Add new</title>
+    <link href="static/encyclopedis/styles.css'" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <div class="addNew">
+        <div>
+            <h2 class="title">Add new Encyclopedia</h2>
+            <form  method="POST" id="{{ title }}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+</body>
+
+</html>

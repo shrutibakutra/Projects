@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <div class="header">
+        <h1>{{ title }}</h1>
+    </div>
+    <div style="margin-top: 5%;">
+        <ul>
+            <li>{{ content|safe }}</li>
+        </ul>
+    </div>
+    <div>
+        <a href="edit/{{ title }}">
+            <input type="submit" value="Edit" name="{{ title }}"></input>
+        </a>
+    </div>
+</div>
+{% endblock %}

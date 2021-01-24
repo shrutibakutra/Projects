@@ -1,11 +1,4 @@
-WIKI - Wikipedia like encyclopedia
+Project Search - A simple HTML and CSS front-end for Google Search, Google Image Search, and Google Advanced Search.
 
-To run this project:
+Project Directory: Search
 
-1) Activate virtual environment:
-    -path to virtual env: go_to/your/project/directory/wiki
-    -use command: for macOS: source env/bin/activate
-                  for windows: py -m venv env
-    -install django using: pip install django
-    -install markdown2 using: pip install markdown2
-    -run project: python3 manage.py runserver.
